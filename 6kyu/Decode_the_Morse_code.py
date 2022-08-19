@@ -102,7 +102,7 @@ def morse_code(code):
 def decode_morse(morsecode):
     # ToDo: Accept dots, dashes and spaces, return human-readable message
     for i in range(len(morsecode)): # delete extra spaces at the beginning and at the end of the string
-
+        # morsecode = morsecode.strip()
         if morsecode.startswith(' '):
             morsecode = morsecode[1:]
         if morsecode.endswith(' '):
